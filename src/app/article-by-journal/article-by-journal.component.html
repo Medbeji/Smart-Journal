@@ -1,0 +1,44 @@
+<!-- <div  style="position:relative;  margin-top:15% ; z-index:4 ; ">
+<div   class="container marketing">
+<section id="blog-landing" *ngFor="let article of articles">
+<div class="white-panel" (click)="onSelect(article)" [routerLink]="['/detail', article._id]" > <img src="{{ article.Picture }}" alt="ALT">
+<h1><a href="#">{{ article.name }}</a></h1>
+<p>{{ article.Description }}</p>
+</div>
+</section>
+</div>
+</div> -->
+
+
+<div class="body">
+            <div  style="position:relative;  margin:25% 0% 5% 5% ; z-index:4 ; ">
+                        <div class="row row-margin-bottom"  >
+                                    <div class="articles" *ngFor="let article of articles">
+                                                <div class="col-md-5 no-padding lib-item" data-category="view" >
+                                                            <div class="lib-panel">
+                                                                        <div class="row box-shadow" >
+                                                                                    <div class="col-md-6">
+                                                                                                <img class="lib-img-show" src="{{ article.Picture }}">
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                                <div class="lib-row lib-header">
+                                                                                                            {{ article.name }}
+                                                                                                            <div class="lib-header-seperator"></div>
+                                                                                                </div>
+                                                                                                <div class="lib-row lib-desc">
+                                                                                                            {{ article.Description }}
+                                                                                                </div>
+                                                                                                <div class="lib-row card-footer">
+                                                                                                      <small>Last updated 3 mins ago</small>
+                                                                                                      <button class="btn btn-info float-right btn-sm rightPosition" (click)="onSelect(article)" [routerLink]="['/detail', article._id]" >Read</button>
+                                                                                                </div>
+                                                                                    </div>
+
+                                                                        </div>
+                                                            </div>
+                                                </div>
+                                                <div class="col-md-1"></div>
+                                    </div>
+                        </div>
+            </div>
+</div>

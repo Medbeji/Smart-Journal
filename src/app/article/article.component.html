@@ -1,0 +1,29 @@
+
+<div style="position:relative;  margin-top:20% ; z-index:4 ; " class="container marketing">
+      <div class="search-results"
+      infiniteScroll
+      [infiniteScrollDistance]="0"
+      [infiniteScrollThrottle]="500"
+
+      (scrolled)="onScroll()" >
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let article of articles" >
+                  <div class="card card-inverse card-info">
+                        <img class="card-img-top" src="{{ article.Picture}}">
+                        <div class="card-block">
+                                    <figure class="profile">
+                                          <img src="{{ article._journal.picture }}" class="profile-avatar" alt="">
+                                    </figure>
+                                    <h4 class="card-title mt-3">{{ article.name }}</h4>
+
+                              <div class="card-text">
+                                    {{ article.Description }}
+                              </div>
+                        </div>
+                        <div class="card-footer">
+                              <small>Last updated 3 mins ago</small>
+                              <button class="btn btn-info float-right btn-sm rightPosition" (click)="onSelect(article)" [routerLink]="['detail', article._id]">Read</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>

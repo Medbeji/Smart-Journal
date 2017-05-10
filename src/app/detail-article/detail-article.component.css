@@ -1,0 +1,157 @@
+img.img-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40%;
+    width: 40%;
+    display: block;
+    position:relative;
+    z-index:6 ;
+     }
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    position:relative;
+    margin-top: 3%;
+    z-index:6 ;
+
+}
+
+.description {
+  font-size: 200%;
+  text-align: center;
+  margin-top: 3%;
+
+}
+
+/*
+img.img-rounded {
+    border-radius: 6%;
+    margin-left: auto;
+    margin-right: auto;
+height:70%;
+
+  display: block;
+position:relative;
+margin-top: 30%;
+
+z-index:5 ;
+}*/
+
+
+.mycontainer{
+  /*background-color: red;*/
+  background-color: #FDF3E7;
+  /*z-index: 5;*/
+}
+
+
+.aricle-content {
+  /*background-color: blue;*/
+  z-index: 5;
+  height: 1500px ;
+  margin:0 auto;
+}
+
+
+.related-articles{
+  /*background-color: green;*/
+  z-index: 5;
+  height: 1500px ;
+  margin:0 auto;
+}
+
+
+/* CARD */
+
+
+.card {
+
+  padding-top: 20px;
+  margin: 10px 10px 20px 10px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.card.hovercard {
+  position: relative;
+  width: 300px;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card.hovercard img {
+  width: 300px;
+  height: 200px;
+}
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.card.hovercard .avatar img {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.card.hovercard .info {
+  padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1;
+  color: #262626;
+  vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+.card.people .card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

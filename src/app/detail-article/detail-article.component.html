@@ -1,0 +1,96 @@
+<!-- <div class="container">
+<img  src="../assets/gris.png" class="img-rounded" alt="Cinque Terre">
+<article [routerLink]="['/detail', article._id]" *ngIf="article">
+<img  class="img-thumbnail" src="{{ article.Picture }}" alt="ALT">
+
+<h1 ><a [routerLink]="['/article', article._id]">{{ article.name }}</a></h1>
+<p >{{ article.Description }}</p>
+<a style="position:relative; top:1000%; margin-left: 8%; z-index:6 ;" routerLink="/article">Back to List</a>
+<a style="position:relative; top:1000%; margin-left: 85%; z-index:6 ;"  target="_blank" href="{{ article.Link}}">View Article</a>
+</article>
+</div>
+
+-->
+
+<div class="container-fluid" style="margin-top:30%">
+  <div class="mycontainer">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="aricle-content">
+
+          <article [routerLink]="['/detail', article._id]" *ngIf="article">
+            <h1 ><a [routerLink]="['/article', article._id]">{{ article.name }}</a></h1>
+            <br>
+            <img  class="img-thumbnail" src="{{ article.Picture }}" alt="ALT">
+            <p class= "description" >{{ article.Description }}</p>
+            <a style="position:relative; top:1000%; margin-left: 8%; z-index:6 ;" routerLink="/article">Back to List</a>
+            <a style="position:relative; top:1000%; margin-left: 85%; z-index:6 ;"  target="_blank" href="{{ article.Link}}">View Article</a>
+          </article>
+
+
+
+
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="related-articles">
+          <h2 style="text-align: center;">Related Articles</h2>
+          <br>
+          <div class="card hovercard">
+            <img src="http://placehold.it/300x200/000000/&text=Header" alt=""/>
+            <div class="avatar">
+              <img src="http://placehold.it/80X80/333333/&text=Head" alt="" />
+            </div>
+            <div class="info">
+              <div class="title">
+                The Title
+              </div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+            </div>
+            <div class="bottom">
+              <button class="btn btn-default">Button</button>
+            </div>
+          </div>
+          <br>
+          <div class="card hovercard">
+            <img src="http://placehold.it/300x200/000000/&text=Header" alt=""/>
+            <div class="avatar">
+              <img src="http://placehold.it/80X80/333333/&text=Head" alt="" />
+            </div>
+            <div class="info">
+              <div class="title">
+                The Title
+              </div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+            </div>
+            <div class="bottom">
+              <button class="btn btn-default">Button</button>
+            </div>
+          </div>
+          <div class="card hovercard">
+            <img src="http://placehold.it/300x200/000000/&text=Header" alt=""/>
+            <div class="avatar">
+              <img src="http://placehold.it/80X80/333333/&text=Head" alt="" />
+            </div>
+            <div class="info">
+              <div class="title">
+                The Title
+              </div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+              <div class="desc">Lorem ipsum</div>
+            </div>
+            <div class="bottom">
+              <button class="btn btn-default">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
